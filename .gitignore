@@ -2,3 +2,7 @@ node_modules/
 reports/
 coverage/
 .stryker-tmp/
+video/audio/
+video/media/
+video/out/
+__pycache__/
