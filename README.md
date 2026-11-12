@@ -35,7 +35,7 @@ Then:
 |---|---|---|
 | Tests | 31 | 37 |
 | Line coverage | **100%** | 100% |
-| Branch coverage | 95.8% | 95.8% |
+| Branch coverage | 95.8% | 100% |
 | Mutation score | **90.67%** (7 survived of 75) | **98.67%** (1 survived) |
 | Agent time | 2m 47s | ~3m |
 
