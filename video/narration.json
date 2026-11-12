@@ -1,0 +1,46 @@
+{
+  "S1Result": [
+    "A coding agent wrote a module and its own tests. Line coverage was one hundred percent.",
+    "Then a tool made seventy five small changes to the code. The tests caught sixty eight. Seven slipped through.",
+    "That is a mutation score of ninety point six seven percent.",
+    "One feedback round caught six more. Ninety eight point six seven percent. Here is how."
+  ],
+  "S2Setup": [
+    "The task was a voucher engine. It applies discount codes to a shopping basket.",
+    "The spec is full of edges. Minimum spend. Expiry dates. Rounding. Caps. And stacking.",
+    "The agent was asked for the code and the tests it would ship. It got no hint of what came next.",
+    "In under three minutes it wrote ninety two lines and thirty one passing tests."
+  ],
+  "S3Mutants": [
+    "Line coverage counts the lines a test runs. It never asks what the test checks.",
+    "Mutation testing changes one small thing in the code. Each changed copy is a mutant.",
+    "Here less than becomes less than or equal. Then the suite runs again.",
+    "A test fails. So the mutant is killed. If every test passes the mutant survived.",
+    "Stryker made seventy five mutants. Sixty eight were killed. Seven survived."
+  ],
+  "S4Survivors": [
+    "Four survivors sit at a boundary or a tie or in the stacking rule. Two only blank an error message. The last one comes later.",
+    "Here less than zero became less than or equal to zero. Free items now throw an error. No test used a zero price.",
+    "Here greater than became greater than or equal. A tie now goes to the later voucher. No test had a tie.",
+    "Every one of these lines still ran. So line coverage stayed at one hundred percent."
+  ],
+  "S5Feedback": [
+    "The seven survivors went back to the agent. It could change the tests only. The code was locked.",
+    "In about three minutes it wrote six new tests. Each one is named for the bug it prevents.",
+    "Thirty seven tests. Seventy four of seventy five mutants killed. Ninety eight point six seven percent."
+  ],
+  "S6Equivalent": [
+    "The last mutant survived both rounds. The agent showed that no test could ever kill it.",
+    "This mutant swaps the first check for true.",
+    "With a minimum spend the first check is already true. Without one the second check compares a number with undefined. That is always false. Same result either way.",
+    "This is an equivalent mutant. The agent confirmed it by running the code. It suggested a skip comment instead of a junk test."
+  ],
+  "S7Takeaway": [
+    "Coverage measured what the tests ran. Mutation testing measured what they checked.",
+    "So do not accept AI written tests on coverage alone. Feed the survivors back. Keep a person on the verdicts.",
+    "One caveat. One small module with a spec full of edges. One agent. One run. Try it on your own code before you trust the numbers."
+  ],
+  "S8EndCard": [
+    "Every number and every test is in the public repo. The links are in the description."
+  ]
+}
