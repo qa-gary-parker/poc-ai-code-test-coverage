@@ -92,6 +92,17 @@ class S1Result(Timed):
     def construct(self):
         title = code("round 1  ·  the agent's own tests", 22, DIM).to_edge(UP, buff=0.7)
         self.add(title)
+        hook = VGroup(
+            txt("Trust coverage to judge AI-written tests?", 40),
+            code("this is what it misses", 26, ACCENT),
+        ).arrange(DOWN, buff=0.45).move_to([0, 0.3, 0])
+        self.play(FadeIn(hook[0], shift=UP * 0.2), run_time=0.5)
+        self.at("this is what")
+        self.play(FadeIn(hook[1], shift=UP * 0.15), run_time=0.4)
+        first = self.cue("a coding agent")
+        self.cursor = 0
+        self.wait(first - 0.6 - self.now())
+        self.play(FadeOut(hook), run_time=0.35)
         lx, rx = -3.7, 2.9
         cov_lab = txt("line coverage", 28, DIM).move_to([lx, 2.0, 0])
         cov_at = [lx, 0.9, 0]

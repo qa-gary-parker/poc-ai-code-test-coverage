@@ -1,5 +1,6 @@
 {
   "S1Result": [
+    "If you trust coverage to judge AI-written tests, this is what it misses.",
     "A coding agent wrote a module and its own tests. Line coverage was one hundred percent.",
     "Then a tool made seventy five small changes to the code. The tests caught sixty eight. Seven slipped through.",
     "That is a mutation score of ninety point six seven percent.",
